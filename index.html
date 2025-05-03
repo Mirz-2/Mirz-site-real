@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>MIR'Z - Fast Food Africain</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #ff8200;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        .hero {
+            background: linear-gradient(to right, #ff8200, #ffb347);
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .btn {
+            background-color: white;
+            color: #ff8200;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .plat, form {
+            background-color: #ffe3c1;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .plat h3 {
+            margin-top: 0;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #ff8200;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e36f00;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MIR'Z - Fast Food Africain</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#menu">Menu</a>
+            <a href="#commande">Commander</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <h2>Le goût du vrai petit-déjeuner africain</h2>
+        <p>Beignets chauds, bouillie onctueuse, Benga savoureux... chez toi ou à emporter.</p>
+        <a href="#commande" class="btn">Commander maintenant</a>
+    </section>
+
+    <section id="menu">
+        <h2>Nos Délices du Matin</h2>
+        <div class="plat">
+            <h3>Benga</h3>
+            <p>Haricots + riz, servi avec piment et huile de palme.</p>
+            <p><strong>Prix :</strong> 500 FCFA</p>
+        </div>
+        <div class="plat">
+            <h3>Zoom-koom</h3>
+            <p>Boisson traditionnelle sucrée et rafraîchissante à base de mil.</p>
+            <p><strong>Prix :</strong> 300 FCFA</p>
+        </div>
+        <div class="plat">
+            <h3>To sauce gombo</h3>
+            <p>Pâte accompagnée de sauce gombo parfumée au soumbala.</p>
+            <p><strong>Prix :</strong> 800 FCFA</p>
+        </div>
+    </section>
+
+    <section id="commande">
+        <h2>Passer une commande</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Ex: +226 70 00 00 00" required>
+
+            <label for="plat">Choisir un plat</label>
+            <select id="plat" name="plat" required>
+                <option value="Benga">Benga - 500 FCFA</option>
+                <option value="Zoom-koom">Zoom-koom - 300 FCFA</option>
+                <option value="To">To - 800 FCFA</option>
+            </select>
+
+            <label for="quantite">Quantité</label>
+            <input type="number" id="quantite" name="quantite" min="1" value="1" required>
+
+            <label for="message">Instructions supplémentaires</label>
+            <textarea id="message" name="message" rows="3" placeholder="Ajoutez du piment, livrer à 8h..."></textarea>
+
+            <button type="submit">Valider la commande</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email :</strong> contact@mirz.africa</p>
+        <p><strong>Téléphone :</strong> +226 70 00 00 00</p>
+        <p><strong>Adresse :</strong> Ouagadougou, Burkina Faso</p>
+        <p>Pour toute question, suggestion ou partenariat, n'hésite pas à nous écrire !</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MIR'Z. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
