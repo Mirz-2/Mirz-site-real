@@ -130,30 +130,41 @@
     </section>
 
     <section id="commande">
-        <h2>Passer une commande</h2>
-        <form action="#" method="post">
-            <label for="nom">Nom complet</label>
-            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+    <h2>Passer une commande</h2>
 
-            <label for="telephone">Téléphone</label>
-            <input type="tel" id="telephone" name="telephone" placeholder="Ex: +226 70 00 00 00" required>
+    <form action="https://formsubmit.io/send/siyaraeliora@gmail.com" method="POST">
+        <!-- Redirection après envoi -->
+        <input name="_redirect" type="hidden" value="https://mirz-2.github.io/Mirz-site/merci.html">
 
-            <label for="plat">Choisir un plat</label>
-            <select id="plat" name="plat" required>
-                <option value="Benga">Benga - 500 FCFA</option>
-                <option value="Zoom-koom">Zoom-koom - 300 FCFA</option>
-                <option value="To">To - 800 FCFA</option>
-            </select>
+        <!-- Champ nom -->
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="Nom" placeholder="Votre nom" required>
 
-            <label for="quantite">Quantité</label>
-            <input type="number" id="quantite" name="quantite" min="1" value="1" required>
+        <!-- Champ téléphone -->
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="Téléphone" placeholder="Ex: +226 70 00 00 00" required>
 
-            <label for="message">Instructions supplémentaires</label>
-            <textarea id="message" name="message" rows="3" placeholder="Ajoutez du piment, livrer à 8h..."></textarea>
+        <!-- Choix du plat -->
+        <label for="plat">Choisir un plat</label>
+        <select id="plat" name="Plat" required>
+            <option value="Benga">Benga - 500 FCFA</option>
+            <option value="Zoom-koom">Zoom-koom - 300 FCFA</option>
+            <option value="To">To - 800 FCFA</option>
+        </select>
 
-            <button type="submit">Valider la commande</button>
-        </form>
-    </section>
+        <!-- Quantité -->
+        <label for="quantite">Quantité</label>
+        <input type="number" id="quantite" name="Quantité" min="1" value="1" required>
+
+        <!-- Message supplémentaire -->
+        <label for="message">Instructions supplémentaires</label>
+        <textarea id="message" name="Message" rows="3" placeholder="Ajoutez du piment, livrer à 8h..."></textarea>
+
+        <!-- Bouton d'envoi -->
+        <button type="submit">Valider la commande</button>
+    </form>
+</section>
+
 
     <section id="contact">
         <h2>Contact</h2>
